@@ -23,4 +23,11 @@
 19. Setup toaster
 20. create otp input.
 21. Create account.
-22.
+
+# 4 July
+
+1. Copy Sign up page data to sign in page.
+2. Create sign in form provider.
+3. create use-sign-in hook
+4. Create login schema in auth.schema
+5. Create login form.
