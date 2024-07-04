@@ -3,9 +3,9 @@
 ## Custom Clerk Auth components without watermark
 
 1. Create components/forms/form-provider.tsx
-2. Create AuthContextProvider
+2. ~~Create AuthContextProvider~~
 3. Create useSignupForm hook
-4. Create authSchema
+4. ~~Create authSchema~~
 5. onCompleteUserRegistration action
 6. complete signup provider now.
 7. complete signup page now.
