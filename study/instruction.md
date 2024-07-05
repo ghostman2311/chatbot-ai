@@ -4,7 +4,7 @@
 
 1. Create components/forms/form-provider.tsx
 2. ~~Create AuthContextProvider~~
-3. Create useSignupForm hook
+3. ~~Create useSignupForm hook~~
 4. ~~Create authSchema~~
 5. onCompleteUserRegistration action
 6. complete signup provider now.
