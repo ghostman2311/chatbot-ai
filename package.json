@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "4.29.12",
+    "@hookform/error-message": "^2.0.1",
     "@hookform/resolvers": "^3.6.0",
     "@prisma/client": "^5.16.1",
     "@radix-ui/react-accordion": "^1.2.0",
@@ -61,13 +62,13 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.4"
+    "typescript": "^5"
   }
 }
