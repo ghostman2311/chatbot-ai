@@ -35,3 +35,4 @@
 # 11 July
 
 1. Fixed the signup issue, Issue was validation schema has fullname.
+2. Code completed till login page.
