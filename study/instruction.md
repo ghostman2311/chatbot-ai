@@ -15,14 +15,14 @@
 11. ~~copy tailwind config~~
 12. ~~create button handler.~~
 13. Create highlight bar.
-14. Create DetailForm.
+14. ~~Create DetailForm.~~
 15. ~~create forms.tsx in constant.~~
 16. ~~install hookform/error-message.~~
 17. ~~Create form generator~~
 18. ~~create otp form.~~
-19. Setup toaster
+19. ~~Setup toaster~~
 20. ~~create otp input.~~
-21. Create account.
+21. ~~Create account.~~
 
 # 4 July
 
@@ -31,3 +31,7 @@
 3. create use-sign-in hook
 4. Create login schema in auth.schema
 5. Create login form.
+
+# 11 July
+
+1. Fixed the signup issue, Issue was validation schema has fullname.

@@ -4,8 +4,20 @@ import { useAuthContextHook } from "@/context/use-auth-context";
 import { useState } from "react";
 import { useFormContext } from "react-hook-form";
 import TypeSelectionForm from "./type-selection-form";
-import AccountDetailsForm from "./account-details-form";
-import OTPForm from "./otp-form";
+import { Spinner } from "@/components/spinner";
+import dynamic from "next/dynamic";
+
+const LoadingComponent = () => <Spinner noPadding />;
+
+const AccountDetailsForm = dynamic(() => import("./account-details-form"), {
+  ssr: false,
+  loading: LoadingComponent,
+});
+
+const OTPForm = dynamic(() => import("./otp-form"), {
+  ssr: false,
+  loading: LoadingComponent,
+});
 
 type Props = {};
 

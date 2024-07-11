@@ -17,8 +17,6 @@ const ButtonHandler = (props: Props) => {
   const { isDirty: isEmail } = getFieldState("email", formState);
   const { isDirty: isPassword } = getFieldState("password", formState);
 
-  console.log(isName, isEmail, isPassword, "currentStepcurrentStep");
-
   if (currentStep === 3) {
     return (
       <div className="w-full flex flex-col gap-3 items-center">
@@ -39,7 +37,6 @@ const ButtonHandler = (props: Props) => {
     return (
       <div className="w-full flex flex-col gap-3 items-center">
         <Button
-          type="submit"
           className="w-full"
           {...(isName &&
             isPassword &&
@@ -67,7 +64,6 @@ const ButtonHandler = (props: Props) => {
   return (
     <div className="w-full flex flex-col gap-3 items-center">
       <Button
-        type="submit"
         className="w-full"
         onClick={() => setCurrentStep((prev: number) => prev + 1)}
       >
