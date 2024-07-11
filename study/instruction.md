@@ -8,13 +8,13 @@
 4. ~~Create authSchema~~
 5. ~~onCompleteUserRegistration action~~
 6. ~~complete signup provider now.~~
-7. complete signup page now.
+7. ~~complete signup page now.~~
 8. ~~create Registration form step~~
 9. ~~create typeselection form.~~
 10. ~~create user-type-card.~~
 11. ~~copy tailwind config~~
 12. ~~create button handler.~~
-13. Create highlight bar.
+13. ~~Create highlight bar.~~
 14. ~~Create DetailForm.~~
 15. ~~create forms.tsx in constant.~~
 16. ~~install hookform/error-message.~~
@@ -26,11 +26,11 @@
 
 # 4 July
 
-1. Copy Sign up page data to sign in page.
-2. Create sign in form provider.
-3. create use-sign-in hook
-4. Create login schema in auth.schema
-5. Create login form.
+1. ~~Copy Sign up page data to sign in page.~~
+2. ~~Create sign in form provider.~~
+3. ~~create use-sign-in hook~~
+4. ~~Create login schema in auth.schema~~
+5. ~~Create login form.~~
 
 # 11 July
 
