@@ -36,3 +36,38 @@
 
 1. Fixed the signup issue, Issue was validation schema has fullname.
 2. Code completed till login page.
+
+# 12 July
+
+1. create navbar
+2. Import this in root page.tsx
+3. change the font in layout.tsx
+4. install next themes
+5. create theme-provider.
+6. create landing-page.ts
+7. create 5 blog post on cloudway use cloudways maybe?
+8. install axios and html-react-parser
+9. create landing action and create onGetblogpost function
+10. Create blog/[id]/page.tsx
+11. create onGetBlogpost action
+12. create dashboard route groups then settings then page.tsx
+13. create infobar
+14. create breadcrumb component. Don't create useSidebar hook yet.
+    ![alt text](image.png)
+15. Create Billing settings components
+16. Create onGetSubscription plan action in setting action
+17. Create section component.
+18. create layout.tsx inside dashboard route groups
+19. create onLoginUser action inside auth action.
+20. create onGetAllAccountDomain action in setting action
+21. create user-chat-context.tsx in context
+22. create sidebar component
+23. create use-sidebar.ts
+24. create onToggleRealTime in conversation action.
+25. create onGetConversationMode action in conversation action.
+26. create maximized-mene and minimized-menu.
+27. create menu.ts in constants folder.
+28. create tab menu props as well.
+29. create tab menu
+30. create domain menu component.
+31. create use-domain.ts in hooks/sidebar.
