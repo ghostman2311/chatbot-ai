@@ -71,3 +71,18 @@
 29. create tab menu
 30. create domain menu component.
 31. create use-domain.ts in hooks/sidebar.
+
+# 13 July
+
+1. install @uploadcare/blocks
+2. get public key next_upload_public
+3. create adddomain schema in settings.schema
+4. create onIntegrateDomain in settings action
+5. create drawer component
+6. create uploadbutton
+7. create menu-item for sidebar
+8. create minimized menu.
+9. render sidebar on dashboard route group layout and render the children as well.
+10. complete the billing settings page now.
+11. Fix breadcrumb now.
+
