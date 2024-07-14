@@ -54,25 +54,25 @@
 
 12. ~~create dashboard route groups then settings then page.tsx~~
 13. ~~create infobar~~
-14. create breadcrumb component. Don't create useSidebar hook yet.
+14. ~~create breadcrumb component. Don't create useSidebar hook yet.~~
     ![alt text](image.png)
-15. Create Billing settings components
-16. Create onGetSubscription plan action in setting action
-17. Create section component.
-18. create layout.tsx inside dashboard route groups
-19. create onLoginUser action inside auth action.
-20. create onGetAllAccountDomain action in setting action
-21. create user-chat-context.tsx in context
-22. create sidebar component
-23. create use-sidebar.ts
-24. create onToggleRealTime in conversation action.
-25. create onGetConversationMode action in conversation action.
-26. create maximized-mene and minimized-menu.
-27. create menu.ts in constants folder.
-28. create tab menu props as well.
-29. create tab menu
-30. create domain menu component.
-31. create use-domain.ts in hooks/sidebar.
+15. Create Billing settings components in settings components. 
+16. ~~Create onGetSubscription plan action in setting action~~
+17. ~~Create section component.~~
+18. ~~create layout.tsx inside dashboard route groups~~
+19. ~~create onLoginUser action inside auth action.~~
+20. ~~create onGetAllAccountDomain action in setting action~~
+21. ~~create user-chat-context.tsx in context~~
+23. create sidebar component
+24. ~~create use-sidebar.ts~~
+25. ~~create onToggleRealTime in conversation action.~~
+26. ~~create onGetConversationMode action in conversation action.~~
+27. create maximized-menu and minimized-menu.
+28. ~~create menu.ts in constants folder.~~
+29. create tab menu props as well.
+30. create tab menu
+31. create domain menu component.
+32. create use-domain.ts in hooks/sidebar.
 
 # 13 July
 
