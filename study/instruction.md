@@ -48,7 +48,7 @@
 
 7. create 5 blog post on cloudway use cloudways maybe?
 8. install axios and html-react-parser
-9.  create landing action and create onGetblogpost function
+9. create landing action and create onGetblogpost function
 10. Create blog/[id]/page.tsx
 11. create onGetBlogpost action
 
@@ -56,23 +56,23 @@
 13. ~~create infobar~~
 14. ~~create breadcrumb component. Don't create useSidebar hook yet.~~
     ![alt text](image.png)
-15. Create Billing settings components in settings components. 
+15. Create Billing settings components in settings components.
 16. ~~Create onGetSubscription plan action in setting action~~
 17. ~~Create section component.~~
 18. ~~create layout.tsx inside dashboard route groups~~
 19. ~~create onLoginUser action inside auth action.~~
 20. ~~create onGetAllAccountDomain action in setting action~~
 21. ~~create user-chat-context.tsx in context~~
-23. create sidebar component
-24. ~~create use-sidebar.ts~~
-25. ~~create onToggleRealTime in conversation action.~~
-26. ~~create onGetConversationMode action in conversation action.~~
-27. create maximized-menu and minimized-menu.
-28. ~~create menu.ts in constants folder.~~
-29. create tab menu props as well.
-30. create tab menu
-31. create domain menu component.
-32. create use-domain.ts in hooks/sidebar.
+22. create sidebar component
+23. ~~create use-sidebar.ts~~
+24. ~~create onToggleRealTime in conversation action.~~
+25. ~~create onGetConversationMode action in conversation action.~~
+26. create maximized-menu and minimized-menu.
+27. ~~create menu.ts in constants folder.~~
+28. create tab menu props as well.
+29. create tab menu
+30. create domain menu component.
+31. create use-domain.ts in hooks/sidebar.
 
 # 13 July
 
@@ -87,3 +87,5 @@
 9. render sidebar on dashboard route group layout and render the children as well.
 10. complete the billing settings page now.
 11. Fix breadcrumb now.
+
+# 14 July
