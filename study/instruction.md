@@ -85,7 +85,7 @@
 7. ~~create menu-item for sidebar~~
 8. ~~create minimized menu.~~
 9. ~~render sidebar on dashboard route group layout and render the children as well.~~
-10. complete the billing settings page now.
+10. ~~complete the billing settings page now except subscription form~~
 11. Fix breadcrumb now.
 
 # 14 July
@@ -105,3 +105,23 @@
 13. create onUpdateDomain action.
 14. create onChatbotimageupdate action.
 15. create onupdatewelcomemessage action.
+
+# 15 July
+
+1. create ondeleteuserdomain action.
+2. create domain-update component.
+3. create code-snippet component.
+4. edit chatbot icon component
+5. create greeting message component.
+6. create bottrainingform now.
+7. create tabs component.
+8. create HELP_DESK_TABS_MENU.
+9. create helpdesk component.
+10. create useHelpdesk hook.
+11. create helpdeskquestionschema.
+12. create onCreateHelpdeskquestion.
+13. create onGetAllHelpDeskQuestions hook.
+14. create accordian component.
+15. create filterquestions components
+16. create useFilterQuestion hook.
+17. create filterquestionschema as well.
