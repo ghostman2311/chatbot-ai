@@ -86,13 +86,13 @@
 8. ~~create minimized menu.~~
 9. ~~render sidebar on dashboard route group layout and render the children as well.~~
 10. ~~complete the billing settings page now except subscription form~~
-11. Fix breadcrumb now.
+11. ~~Fix breadcrumb now.~~
 
 # 14 July
 
-1. create dark-mode component
-2. create use-setting hook in settings
-3. create darkmode.tsx, lightmode.tsx and systemmode.tsx in theme-placeholder components.
+1. ~~create dark-mode component~~
+2. ~~create use-setting hook in settings~~
+3. ~~create darkmode.tsx, lightmode.tsx and systemmode.tsx in theme-placeholder components.~~
 4. create change password
 5. create useChangePassword hook in settings
 6. create changepassword schema
@@ -125,3 +125,5 @@
 15. create filterquestions components
 16. create useFilterQuestion hook.
 17. create filterquestionschema as well.
+18. create onCreateFilterQuestion action.
+19. create onGetAllFilterQuestions action.

@@ -20,8 +20,6 @@ const useSidebar = () => {
 
   const { chatRoom } = useChatContext();
 
-  // TODO: onGetCurrentMode,
-
   const onActivateRealtime = async (e: any) => {
     try {
       const realtime = await onToggleRealtime(
@@ -68,6 +66,8 @@ const useSidebar = () => {
     onActivateRealtime,
     onSignOut,
     loading,
+    realtime,
+    chatRoom,
   };
 };
 
