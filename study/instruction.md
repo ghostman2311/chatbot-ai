@@ -63,28 +63,28 @@
 19. ~~create onLoginUser action inside auth action.~~
 20. ~~create onGetAllAccountDomain action in setting action~~
 21. ~~create user-chat-context.tsx in context~~
-22. create sidebar component
+22. ~~create sidebar component~~
 23. ~~create use-sidebar.ts~~
 24. ~~create onToggleRealTime in conversation action.~~
 25. ~~create onGetConversationMode action in conversation action.~~
-26. create maximized-menu and minimized-menu.
+26. ~~create maximized-menu and minimized-menu.~~
 27. ~~create menu.ts in constants folder.~~
 28. create tab menu props as well.
 29. create tab menu
-30. create domain menu component.
-31. create use-domain.ts in hooks/sidebar.
+30. ~~create domain menu component.~~
+31. ~~create use-domain.ts in hooks/sidebar.~~
 
 # 13 July
 
-1. install @uploadcare/blocks
-2. get public key next_upload_public
-3. create adddomain schema in settings.schema
-4. create onIntegrateDomain in settings action
-5. create drawer component
-6. create uploadbutton
-7. create menu-item for sidebar
-8. create minimized menu.
-9. render sidebar on dashboard route group layout and render the children as well.
+1. ~~install @uploadcare/blocks~~
+2. ~~get public key next_upload_public~~
+3. ~~create adddomain schema in settings.schema~~
+4. ~~create onIntegrateDomain in settings action~~
+5. ~~create drawer component~~
+6. ~~create uploadbutton~~
+7. ~~create menu-item for sidebar~~
+8. ~~create minimized menu.~~
+9. ~~render sidebar on dashboard route group layout and render the children as well.~~
 10. complete the billing settings page now.
 11. Fix breadcrumb now.
 
@@ -103,5 +103,5 @@
 11. create useSetting hook
 12. create DomainSettingSchema
 13. create onUpdateDomain action.
-14. create onChatbotimageupdate action. 
+14. create onChatbotimageupdate action.
 15. create onupdatewelcomemessage action.

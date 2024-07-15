@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import React from "react";
 
 type Props = {
   size: "max" | "min";
@@ -46,7 +47,6 @@ const MenuItem = ({ size, path, icon, label, current, onSignOut }: Props) => {
           {icon}
         </Link>
       );
-
     default:
       return null;
   }

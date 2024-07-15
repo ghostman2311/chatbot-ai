@@ -1,7 +1,11 @@
 import { SIDE_BAR_MENU } from "@/constants/menu";
+
+import React from "react";
+
+import { LogOut, MonitorSmartphone } from "lucide-react";
 import { MenuLogo } from "@/icons/menu-logo";
 import MenuItem from "./menu-item";
-import { LogOut, MonitorSmartphone } from "lucide-react";
+import DomainMenu from "./domain-menu";
 
 type MinMenuProps = {
   onShrink(): void;
@@ -17,7 +21,7 @@ type MinMenuProps = {
     | undefined;
 };
 
-const MinimisedMenu = ({
+export const MinMenu = ({
   onShrink,
   current,
   onSignOut,
@@ -30,16 +34,10 @@ const MinimisedMenu = ({
       </span>
       <div className="animate-fade-in opacity-0 delay-300 fill-mode-forwards flex flex-col justify-between h-full pt-10">
         <div className="flex flex-col">
-          {SIDE_BAR_MENU.map((menu, key) => {
-            return (
-              <MenuItem
-                key={menu.label}
-                size="min"
-                {...menu}
-                current={current}
-              />
-            );
-          })}
+          {SIDE_BAR_MENU.map((menu, key) => (
+            <MenuItem size="min" {...menu} key={key} current={current} />
+          ))}
+          <DomainMenu min domains={domains} />
         </div>
         <div className="flex flex-col">
           <MenuItem
@@ -50,7 +48,7 @@ const MinimisedMenu = ({
           />
           <MenuItem
             size="min"
-            label="Mobile app"
+            label="Mobile App"
             icon={<MonitorSmartphone />}
           />
         </div>
@@ -58,5 +56,3 @@ const MinimisedMenu = ({
     </div>
   );
 };
-
-export default MinimisedMenu;

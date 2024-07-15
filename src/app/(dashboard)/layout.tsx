@@ -10,8 +10,8 @@ const OwnerLayout = async ({ children }: { children: React.ReactNode }) => {
   return (
     <ChatProvider>
       <div className="flex h-screen w-full">
+        <Sidebar domains={authenticated.domains} />
         <div className="w-full h-screen flex flex-col pl-20 md:pl-4">
-          <Sidebar domains={authenticated.domains} />
           {children}
         </div>
       </div>
