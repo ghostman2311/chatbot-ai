@@ -127,3 +127,41 @@
 17. create filterquestionschema as well.
 18. create onCreateFilterQuestion action.
 19. create onGetAllFilterQuestions action.
+
+# 16 July
+
+1. create conversation page.
+2. create conversation menu component
+3. create use-conversation hook inside the conversation.
+4. create conversationsearchschema.
+5. create onGetDomainChatRooms action.
+6. create onGetChatMessages action.
+7. create conversationsearch component.
+8. create chatcard component.
+9. create useChatTime hook.
+10. create onViewUnreadMessages action.
+11. create messenger component.
+12. create useChatWindow hook.(setup pusher later)
+13. create chatbotmessageschema.
+14. bun add pusher, bun add pusher-js.
+15. create pusher client.
+16. create onOwnerSendMessage action.
+17. create onRealtimechat action.
+18. create chatbot component with bubble.tsx.
+19. create uuidfromtring util fn.
+20. create chatbot page.
+21. create aichatbot component.
+22. create useChatbot hook.
+23. create postToParent function in libs
+24. create onGetCurrentChatbot.
+25. continue @5:50
+
+# 17 July
+
+1. create onAiChatBotAssitant action.
+2. create extractemailfromstring util fn.
+3. create onStoreConversation action.
+4. create onRealtimechat action(comment this on above server action).
+5. bun add nodemailer
+6. continue @6:00
+
