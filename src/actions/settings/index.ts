@@ -1,7 +1,7 @@
 "use server";
 
 import { client } from "@/lib/prisma";
-import { currentUser, redirectToSignIn } from "@clerk/nextjs";
+import { clerkClient, currentUser, redirectToSignIn } from "@clerk/nextjs";
 
 export const onIntegrateDomain = async (domain: string, icon: string) => {
   const user = await currentUser();
@@ -144,5 +144,70 @@ export const onGetAllAccountDomains = async () => {
     } catch (error) {
       console.log(error);
     }
+  }
+};
+
+export const onUpdatePassword = async (password: string) => {
+  try {
+    const user = await currentUser();
+    if (!user) return null;
+
+    const update = await clerkClient.users.updateUser(user.id, {
+      password,
+    });
+
+    if (update) {
+      return {
+        status: 200,
+        message: "password updated",
+      };
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const onGetCurrentDomainInfo = async (domain: string) => {
+  const user = await currentUser();
+
+  if (!user) return;
+  try {
+    const userDomain = await client.user.findUnique({
+      where: {
+        clerkId: user.id,
+      },
+      select: {
+        subscription: {
+          select: {
+            plan: true,
+          },
+        },
+        domains: {
+          where: {
+            name: {
+              contains: domain,
+            },
+          },
+          select: {
+            id: true,
+            name: true,
+            icon: true,
+            userId: true,
+            products: true,
+            chatBot: {
+              select: {
+                id: true,
+                welcomeMessage: true,
+                icon: true,
+              },
+            },
+          },
+        },
+      },
+    });
+
+    if (userDomain) return userDomain;
+  } catch (error) {
+    console.log(error);
   }
 };

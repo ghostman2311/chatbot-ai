@@ -93,12 +93,12 @@
 1. ~~create dark-mode component~~
 2. ~~create use-setting hook in settings~~
 3. ~~create darkmode.tsx, lightmode.tsx and systemmode.tsx in theme-placeholder components.~~
-4. create change password
-5. create useChangePassword hook in settings
-6. create changepassword schema
-7. create onUpdatePassword action
-8. create dynamic route for domain.
-9. create onGetCurrentDomainInfo action in settings.
+4. ~~create change password~~
+5. ~~create useChangePassword hook in settings~~
+6. ~~create changepassword schema~~
+7. ~~create onUpdatePassword action~~
+8. ~~create dynamic route for domain.~~
+9. ~~create onGetCurrentDomainInfo action in settings.~~
 10. create settingsform.
 11. create useSetting hook
 12. create DomainSettingSchema
@@ -165,3 +165,4 @@
 5. bun add nodemailer
 6. continue @6:00
 
+# 19 July
