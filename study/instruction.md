@@ -165,4 +165,16 @@
 5. bun add nodemailer
 6. continue @6:00
 
-# 19 July
+# 20 July
+
+1. create mailer server action.
+2. setup gmail app password.
+3. bun add openai
+4. create extractUrlfromstring function in utils
+5. complete the usechatbot hook.
+6. create botwindow component.
+7. create realtimemode component.
+8. create useRealtime hook.
+9. continue working on chatbot component.
+10. create responding component.
+11. continue from 6:35
