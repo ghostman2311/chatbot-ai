@@ -26,3 +26,52 @@ export const AddDomainSchema = z.object({
       message: "Only JPG, JPEG & PNG are accepted file formats",
     }),
 });
+
+export type DomainSettingsProps = {
+  domain?: string;
+  image?: any;
+  welcomeMessage?: string;
+};
+
+export const DomainSettingsSchema = z
+  .object({
+    domain: z
+      .string()
+      .min(4, { message: "A domain must be atleast 3 characters" })
+      .refine(
+        (value) =>
+          /^((?!-)[A-Za-z0-9-]{1,63}(?<!-)\.)+[A-Za-z]{2,3}$/.test(value ?? ""),
+        "This is not a valid domain"
+      )
+      .optional()
+      .or(z.literal("").transform(() => undefined)),
+    image: z.any().optional(),
+    welcomeMessae: z
+      .string()
+      .min(6, {
+        message: "The message must be atleast 6 characters",
+      })
+      .optional()
+      .or(z.literal("").transform(() => undefined)),
+  })
+  .refine(
+    (schema) => {
+      if (schema.image?.length) {
+        if (
+          ACCEPTED_FILE_TYPES.includes(schema.image?.[0].type!) &&
+          schema.image?.[0].size <= MAX_UPLOAD_SIZE
+        ) {
+          return true;
+        }
+      }
+
+      if (!schema.image?.length) {
+        return true;
+      }
+    },
+    {
+      message:
+        "The file must be less than 2MB, and only PNG &JPEG are accepted",
+      path: ["image"],
+    }
+  );

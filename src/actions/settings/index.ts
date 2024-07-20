@@ -211,3 +211,133 @@ export const onGetCurrentDomainInfo = async (domain: string) => {
     console.log(error);
   }
 };
+
+export const onUpdateDomain = async (id: string, name: string) => {
+  try {
+    const domainExists = await client.domain.findFirst({
+      where: {
+        name: {
+          contains: name,
+        },
+      },
+    });
+
+    if (!domainExists) {
+      const domain = await client.domain.update({
+        where: {
+          id,
+        },
+        data: {
+          name,
+        },
+      });
+
+      if (domain) {
+        return {
+          status: 200,
+          message: "Domain updated",
+        };
+      }
+
+      return {
+        status: 400,
+        message: "Opps, something went wrong!",
+      };
+    }
+
+    return {
+      status: 400,
+      message: "Domain with this name already exists",
+    };
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const onChatbotImageUpdate = async (id: string, icon: string) => {
+  const user = await currentUser();
+  if (!user) return;
+
+  try {
+    const domain = await client.domain.update({
+      where: {
+        id,
+      },
+      data: {
+        chatBot: {
+          update: {
+            data: {
+              icon,
+            },
+          },
+        },
+      },
+    });
+
+    if (domain) {
+      return {
+        status: 200,
+        message: "Domain updated",
+      };
+    }
+    return {
+      status: 400,
+      message: "Opps, something went wrong",
+    };
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const onUpdateWelcomeMessage = async (
+  message: string,
+  domainId: string
+) => {
+  try {
+    const update = await client.domain.update({
+      where: {
+        id: domainId,
+      },
+      data: {
+        chatBot: {
+          update: {
+            data: {
+              welcomeMessage: message,
+            },
+          },
+        },
+      },
+    });
+
+    if (update) {
+      return {
+        status: 200,
+        message: "Welcome message updated",
+      };
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const onDeleteUserDomain = async (id: string) => {
+  const user = await currentUser();
+  if (!user) return;
+
+  try {
+    const validUser = await client.user.findUnique({
+      where: {
+        clerkId: id,
+      },
+      select: {
+        id: true,
+      },
+    });
+
+    if (validUser) {
+      
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
