@@ -99,12 +99,12 @@
 7. ~~create onUpdatePassword action~~
 8. ~~create dynamic route for domain.~~
 9. ~~create onGetCurrentDomainInfo action in settings.~~
-10. create settingsform.
-11. create useSetting hook
-12. create DomainSettingSchema
-13. create onUpdateDomain action.
-14. create onChatbotimageupdate action.
-15. create onupdatewelcomemessage action.
+10. ~~create settingsform.~~
+11. ~~create useSetting hook~~
+12. ~~create DomainSettingSchema~~
+13. ~~create onUpdateDomain action.~~
+14. ~~create onChatbotimageupdate action.~~
+15. ~~create onupdatewelcomemessage action.~~
 
 # 15 July
 
