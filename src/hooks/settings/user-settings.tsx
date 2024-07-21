@@ -1,5 +1,6 @@
 import {
   onChatbotImageUpdate,
+  onDeleteUserDomain,
   onUpdateDomain,
   onUpdatePassword,
   onUpdateWelcomeMessage,
@@ -124,13 +125,22 @@ export const useSettings = (id: string) => {
   });
 
   const onDeleteDomain = async () => {
-    setDeleting(true)
-    
+    setDeleting(true);
+    const deleted = await onDeleteUserDomain(id);
+    if (deleted) {
+      toast({
+        title: "Success",
+        description: deleted.message,
+      });
+      setDeleting(false);
+      router.refresh();
+    }
   };
 
   return {
     register,
     onUpdateSettings,
+    onDeleteDomain,
     errors,
     loading,
     deleting,

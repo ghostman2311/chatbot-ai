@@ -108,11 +108,11 @@
 
 # 15 July
 
-1. create ondeleteuserdomain action.
-2. create domain-update component.
-3. create code-snippet component.
-4. edit chatbot icon component
-5. create greeting message component.
+1. ~~create ondeleteuserdomain action.~~
+2. ~~create domain-update component.~~
+3. ~~create code-snippet component.~~
+4. ~~edit chatbot icon component~~
+5. ~~create greeting message component.~~
 6. create bottrainingform now.
 7. create tabs component.
 8. create HELP_DESK_TABS_MENU.
