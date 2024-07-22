@@ -178,3 +178,19 @@
 9. continue working on chatbot component.
 10. create responding component.
 11. continue from 6:35
+
+# 22 July
+
+1. Test the chatbot now.
+2. create portal layout.
+3. create portalbanner component.
+4. create dynamic appointment page `app/portal/[domainid]/appointment/[customerid]`
+5. create customer signup page on above page.
+6. create onDomainCustomerResponses server action.
+7. create onGetAllDomainBooking action.
+8. create portal form component.
+9. create usePortal hook
+10. create onBookNewAppointment server action.
+11. create portalsteps components.
+12. create questionform component.
+13. continue from 7:05
