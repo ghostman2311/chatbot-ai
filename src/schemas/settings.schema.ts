@@ -8,6 +8,11 @@ export type AddDomainProps = {
   image?: any;
 };
 
+export type HelpDeskQuestionsProps = {
+  question: string;
+  answer: string;
+};
+
 export const AddDomainSchema = z.object({
   domain: z
     .string()
@@ -75,3 +80,12 @@ export const DomainSettingsSchema = z
       path: ["image"],
     }
   );
+
+export const HelpDeskQuestionsSchema = z.object({
+  question: z.string().min(1, {
+    message: "Question cannot be left empty",
+  }),
+  answer: z.string().min(1, {
+    message: "Answer can not be left empty",
+  }),
+});

@@ -1,6 +1,6 @@
 "use client";
 
-import { useChangePassword } from "@/hooks/settings/user-settings";
+import { useChangePassword } from "@/hooks/settings/use-settings";
 import Section from "../section-label";
 import FormGenerator from "../forms/form-generator";
 import { Button } from "../ui/button";

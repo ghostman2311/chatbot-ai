@@ -1,6 +1,6 @@
 "use client";
 
-import { useThemeMode } from "@/hooks/settings/user-settings";
+import { useThemeMode } from "@/hooks/settings/use-settings";
 import Section from "../section-label";
 import { cn } from "@/lib/utils";
 import { SystemMode } from "../themes-placeholder/systemmode";

@@ -1,6 +1,6 @@
 "use client";
 import { Separator } from "@/components/ui/separator";
-import { useSettings } from "@/hooks/settings/user-settings";
+import { useSettings } from "@/hooks/settings/use-settings";
 import DomainUpdate from "./domain-update";
 import CodeSnippet from "./code-snippet";
 import PremiumBadge from "@/icons/premium-badge";

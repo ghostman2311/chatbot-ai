@@ -11,6 +11,11 @@ type SIDE_BAR_MENU_PROPS = {
   path: string;
 };
 
+type TABS_MENU_PROPS = {
+  label: string;
+  icon?: JSX.Element;
+};
+
 export const SIDE_BAR_MENU: SIDE_BAR_MENU_PROPS[] = [
   {
     label: "Dashboard",
@@ -41,5 +46,14 @@ export const SIDE_BAR_MENU: SIDE_BAR_MENU_PROPS[] = [
     label: "Email Marketing",
     icon: <EmailIcon />,
     path: "email-marketing",
+  },
+];
+
+export const HELP_DESK_TABS_MENU: TABS_MENU_PROPS[] = [
+  {
+    label: "help desk",
+  },
+  {
+    label: "questions",
   },
 ];
