@@ -133,7 +133,7 @@
 1. create conversation page.
 2. create conversation menu component
 3. create use-conversation hook inside the conversation.
-4. create conversationsearchschema.
+4. ~~create conversationsearchschema.~~
 5. create onGetDomainChatRooms action.
 6. create onGetChatMessages action.
 7. create conversationsearch component.
@@ -194,3 +194,24 @@
 11. create portalsteps components.
 12. create questionform component.
 13. continue from 7:05
+
+# 27 July
+
+1. create bookingappointment date component.
+2. create APPOINTMENT_TIME_SLOTS in constants.
+3. create save answers server action.
+4. create appointment page.
+5. create onGetAllBookingsForCurrentUser server action.
+6. create allappointments component.
+7. create appointment table header in constants.
+8. create data table components.
+9. create integration route.
+10. create onGetPaymentConnected server action.
+11. create IntegrationList component.
+12. create INTEGRATION_LIST_ITEMS in constants.
+13. create IntegrationTrigger component.
+14. create modal component.
+15. create IntegrationModalBody component.
+16. create stripe-connect.tsx
+17. create useStripe hook.
+18. continue @ 7:42
