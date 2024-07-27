@@ -13,6 +13,10 @@ export type HelpDeskQuestionsProps = {
   answer: string;
 };
 
+export type FilterQuestionsProps = {
+  question: string;
+};
+
 export const AddDomainSchema = z.object({
   domain: z
     .string()
@@ -87,5 +91,11 @@ export const HelpDeskQuestionsSchema = z.object({
   }),
   answer: z.string().min(1, {
     message: "Answer can not be left empty",
+  }),
+});
+
+export const FilterQuestionsSchema = z.object({
+  question: z.string().min(1, {
+    message: "Question can not be left empty",
   }),
 });

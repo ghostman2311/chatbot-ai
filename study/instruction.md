@@ -113,20 +113,20 @@
 3. ~~create code-snippet component.~~
 4. ~~edit chatbot icon component~~
 5. ~~create greeting message component.~~
-6. create bottrainingform now.
-7. create tabs component.
-8. create HELP_DESK_TABS_MENU.
-9. create helpdesk component.
-10. create useHelpdesk hook.
-11. create helpdeskquestionschema.
-12. create onCreateHelpdeskquestion.
-13. create onGetAllHelpDeskQuestions hook.
-14. create accordian component.
-15. create filterquestions components
-16. create useFilterQuestion hook.
-17. create filterquestionschema as well.
-18. create onCreateFilterQuestion action.
-19. create onGetAllFilterQuestions action.
+6. ~~create bottrainingform now.~~
+7. ~~create tabs component.~~
+8. ~~create HELP_DESK_TABS_MENU.~~
+9. ~~create helpdesk component.~~
+10. ~~create useHelpdesk hook.~~
+11. ~~create helpdeskquestionschema.~~
+12. ~~create onCreateHelpdeskquestion action.~~
+13. ~~create onGetAllHelpDeskQuestions action.~~
+14. ~~create accordian component.~~
+15. ~~create filterquestions components~~
+16. ~~create useFilterQuestion hook.~~
+17. ~~create filterquestionschema as well.~~
+18. ~~create onCreateFilterQuestion action.~~
+19. ~~create onGetAllFilterQuestions action.~~
 
 # 16 July
 
