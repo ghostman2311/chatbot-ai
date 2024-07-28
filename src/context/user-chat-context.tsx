@@ -65,6 +65,5 @@ export const ChatProvider = ({ children }: { children: React.ReactNode }) => {
 
 export const useChatContext = () => {
   const state = useContext(ChatContext);
-
   return state;
 };

@@ -131,25 +131,25 @@
 # 16 July
 
 1. create conversation page.
-2. create conversation menu component
-3. create use-conversation hook inside the conversation.
+2. ~~create conversation menu component~~
+3. ~~create use-conversation hook inside the conversation.~~
 4. ~~create conversationsearchschema.~~
-5. create onGetDomainChatRooms action.
-6. create onGetChatMessages action.
-7. create conversationsearch component.
-8. create chatcard component.
-9. create useChatTime hook.
-10. create onViewUnreadMessages action.
-11. create messenger component.
-12. create useChatWindow hook.(setup pusher later)
-13. create chatbotmessageschema.
-14. bun add pusher, bun add pusher-js.
-15. create pusher client.
-16. create onOwnerSendMessage action.
-17. create onRealtimechat action.
-18. create chatbot component with bubble.tsx.
-19. create uuidfromtring util fn.
-20. create chatbot page.
+5. ~~create onGetDomainChatRooms action.~~
+6. ~~create onGetChatMessages action.~~
+7. ~~create conversationsearch component.~~
+8. ~~create chatcard component.~~
+9. ~~create useChatTime hook.~~
+10. ~~create onViewUnreadMessages action.~~
+11. ~~create messenger component.~~
+12. ~~create useChatWindow hook.(setup pusher later)~~
+13. ~~create chatbotmessageschema.~~
+14. ~~bun add pusher, bun add pusher-js.~~
+15. ~~create pusher client.~~
+16. ~~create onOwnerSendMessage action.~~
+17. create onRealtimechat action.(comment it out)
+18. ~~create chatbot component with bubble.tsx.~~
+19. ~~create uuidfromtring util fn.~~
+20. create chatbot page(app/chatbot dont put it inside the dashboard route group).
 21. create aichatbot component.
 22. create useChatbot hook.
 23. create postToParent function in libs
@@ -215,3 +215,54 @@
 16. create stripe-connect.tsx
 17. create useStripe hook.
 18. continue @ 7:42
+
+# 28 July
+
+1. create app/api/stripe/connect/route.ts.
+2. bun add stripe
+3. add public and secret stripe key in app.
+4. create GET route in route.ts
+5. create producttable component.
+6. create sidesheet component.
+7. create createproduct form component.
+8. create useProducts hook
+9. create addproductprops and addproductschema.
+10. create onCreateNewDomainProduct server action.
+11. create datatable for All product tab content
+12. create page for customerid in portal/domainid/payment folder.
+13. create onGetDomainProductsAndConnectedAccountId server action.
+14. create product-checkout for portal-steps component.
+15. bun add @stripe/stripe-js @stripe/react-stripe-js
+16. create useStripeCustomer hook
+17. create onCreateCustomerPaymentIntentSecret server action.
+18. create customerpaymentform
+19. create useCompleteCustomerPayment hook.
+20. Email marketing is currently missing.
+21. so create subscription form for billing settings components.
+22. create useSubscription hook.
+23. create onUpdateSubscription action.
+24. create subscription card component.
+25. create stripe-elements component.
+26. create useStripeElements hook
+27. create onGetStripeClientSecret action.
+28. create setPlanAmount function
+29. create paymentform
+30. creeate useCompletePayment hook.
+31. create dashboard page.
+32. create getUserClients server action.
+33. create getUserBalance server action.
+34. create getUserAppointments server action.
+35. create getUserPlanInfo server action.
+36. create getUserTransaction server action.
+37. create getUserTotalProductPrice server action.
+38. create dashboard card
+39. create PlanUsage component.
+40. create progressbar component.
+41. test the portal page now and see trasaction etc.
+42. create app on pusher and copy the api keys.
+43. uncomment the onRealtimechat from bot action.
+44. uncomment pusherServer and client
+45. now you can import the useRealtime hook inside the RealtimeMode component.
+46. uncomment from useChatWindow hook as well.
+47. PROJECT IS COMPLETED EXCEPT EMAIL MARKETING SECTION.
+

@@ -4,6 +4,8 @@ import DashboardIcon from "@/icons/dashboard-icon";
 import EmailIcon from "@/icons/email-icon";
 import IntegrationsIcon from "@/icons/integrations-icon";
 import SettingsIcon from "@/icons/settings-icon";
+import StarIcon from "@/icons/star-icon";
+import TimerIcon from "@/icons/timer-icon";
 
 type SIDE_BAR_MENU_PROPS = {
   label: string;
@@ -55,5 +57,24 @@ export const HELP_DESK_TABS_MENU: TABS_MENU_PROPS[] = [
   },
   {
     label: "questions",
+  },
+];
+
+export const TABS_MENU: TABS_MENU_PROPS[] = [
+  {
+    label: "unread",
+    icon: <EmailIcon />,
+  },
+  {
+    label: "all",
+    icon: <EmailIcon />,
+  },
+  {
+    label: "expired",
+    icon: <TimerIcon />,
+  },
+  {
+    label: "starred",
+    icon: <StarIcon />,
   },
 ];
