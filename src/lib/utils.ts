@@ -11,6 +11,14 @@ export const extractUUIDFromString = (url: string) => {
   );
 };
 
+export const extractEmailFromString = (text: string) => {
+  return text.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/gi);
+};
+
+export const extractURLfromString = (url: string) => {
+  return url.match(/https?:\/\/[^\s"<>]+/);
+};
+
 export const getMonthName = (month: number) => {
   switch (month) {
     case 1:
@@ -45,3 +53,7 @@ export const getMonthName = (month: number) => {
 export const pusherServer = {};
 
 export const pusherClient = {};
+
+export const postToParent = (message: string) => {
+  window.parent.postMessage(message, "*");
+};

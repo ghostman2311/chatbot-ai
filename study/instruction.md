@@ -149,29 +149,29 @@
 17. create onRealtimechat action.(comment it out)
 18. ~~create chatbot component with bubble.tsx.~~
 19. ~~create uuidfromtring util fn.~~
-20. create chatbot page(app/chatbot dont put it inside the dashboard route group).
+20. ~~create chatbot page(app/chatbot dont put it inside the dashboard route group).~~
 21. create aichatbot component.
-22. create useChatbot hook.
-23. create postToParent function in libs
-24. create onGetCurrentChatbot.
+22. ~~create useChatbot hook.~~
+23. ~~create postToParent function in libs~~
+24. ~~create onGetCurrentChatbot.~~
 25. continue @5:50
 
 # 17 July
 
-1. create onAiChatBotAssitant action.
-2. create extractemailfromstring util fn.
-3. create onStoreConversation action.
+1. ~~create onAiChatBotAssitant action.~~
+2. ~~create extractemailfromstring util fn.~~
+3. ~~create onStoreConversation action.~~
 4. create onRealtimechat action(comment this on above server action).
-5. bun add nodemailer
+5. ~~bun add nodemailer~~
 6. continue @6:00
 
 # 20 July
 
-1. create mailer server action.
+1. ~~create mailer server action.~~
 2. setup gmail app password.
-3. bun add openai
-4. create extractUrlfromstring function in utils
-5. complete the usechatbot hook.
+3. ~~bun add openai~~
+4. ~~create extractUrlfromstring function in utils~~
+5. ~~complete the usechatbot hook.~~
 6. create botwindow component.
 7. create realtimemode component.
 8. create useRealtime hook.
@@ -265,4 +265,25 @@
 45. now you can import the useRealtime hook inside the RealtimeMode component.
 46. uncomment from useChatWindow hook as well.
 47. PROJECT IS COMPLETED EXCEPT EMAIL MARKETING SECTION.
+
+# 29 July
+
+1. create email-marketing folder in dashboard
+2. create onGetAllCustomers server action.
+3. create onGetAllCampaigns server action.
+4. create EmailMarketing component.
+5. create useEmailMarketing hook.
+6. create EmailMarketing schema.
+7. create onCreateMarketingCampaign server action.
+8. create onSaveEmailTemplate server action.
+9. create onAddCustomersToEmail server action.
+10. create onBulkMailer server action.
+11. create customerTable component.
+12. create customeranswer component.
+13. create useAnswer hook.
+14. create onGetAllCustomerResponses server action.
+15. create EditEmail Modal.
+16. create useEditEmail hook.
+17. create onGetEmailTemplate server action.
+18. Finally Project has been completed.
 
