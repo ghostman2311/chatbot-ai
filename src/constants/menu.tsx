@@ -2,6 +2,7 @@ import CalIcon from "@/icons/cal-icon";
 import ChatIcon from "@/icons/chat-icon";
 import DashboardIcon from "@/icons/dashboard-icon";
 import EmailIcon from "@/icons/email-icon";
+import HelpDeskIcon from "@/icons/help-desk-icon";
 import IntegrationsIcon from "@/icons/integrations-icon";
 import SettingsIcon from "@/icons/settings-icon";
 import StarIcon from "@/icons/star-icon";
@@ -76,5 +77,16 @@ export const TABS_MENU: TABS_MENU_PROPS[] = [
   {
     label: "starred",
     icon: <StarIcon />,
+  },
+];
+
+export const BOT_TABS_MENU: TABS_MENU_PROPS[] = [
+  {
+    label: "chat",
+    icon: <ChatIcon />,
+  },
+  {
+    label: "helpdesk",
+    icon: <HelpDeskIcon />,
   },
 ];

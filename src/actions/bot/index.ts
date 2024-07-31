@@ -1,7 +1,8 @@
 "use server";
 
 import { client } from "@/lib/prisma";
-import { extractEmailFromString, extractURLfromString } from "@/lib/utils";
+import { extractURLfromString, extractEmailFromString } from "@/lib/utils";
+// import { onRealTimeChat } from "../conversation";
 import { clerkClient } from "@clerk/nextjs";
 import { onMailer } from "../mailer";
 import OpenAi from "openai";
@@ -10,7 +11,7 @@ const openai = new OpenAi({
   apiKey: process.env.OPEN_AI_KEY,
 });
 
-export const onStoreConversation = async (
+export const onStoreConversations = async (
   id: string,
   message: string,
   role: "assistant" | "user"
@@ -64,9 +65,7 @@ let customerEmail: string | undefined;
 
 export const onAiChatBotAssistant = async (
   id: string,
-  chat: {
-    role: "assistant" | "user";
-  }[],
+  chat: { role: "assistant" | "user"; content: string }[],
   author: "user",
   message: string
 ) => {
@@ -87,7 +86,6 @@ export const onAiChatBotAssistant = async (
         },
       },
     });
-
     if (chatBotDomain) {
       const extractedEmail = extractEmailFromString(message);
       if (extractedEmail) {
@@ -146,26 +144,31 @@ export const onAiChatBotAssistant = async (
               },
             },
           });
-
           if (newCustomer) {
+            console.log("new customer made");
             const response = {
               role: "assistant",
-              content: `Welcome abroad ${
+              content: `Welcome aboard ${
                 customerEmail.split("@")[0]
               }! I'm glad to connect with you. Is there anything you need help with?`,
             };
-            return response;
+            return { response };
           }
         }
-
         if (checkCustomer && checkCustomer.customer[0].chatRoom[0].live) {
-          await onStoreConversation(
-            checkCustomer.customer[0].chatRoom[0].id!,
+          await onStoreConversations(
+            checkCustomer?.customer[0].chatRoom[0].id!,
             message,
             author
           );
 
-          //   onRealtimeChat
+          // onRealTimeChat(
+          //   checkCustomer.customer[0].chatRoom[0].id,
+          //   message,
+          //   "user",
+          //   author
+          // );
+
           if (!checkCustomer.customer[0].chatRoom[0].mailed) {
             const user = await clerkClient.users.getUser(
               checkCustomer.User?.clerkId!
@@ -173,7 +176,7 @@ export const onAiChatBotAssistant = async (
 
             onMailer(user.emailAddresses[0].emailAddress);
 
-            // update mail status to prevent spamming
+            //update mail status to prevent spamming
             const mailed = await client.chatRoom.update({
               where: {
                 id: checkCustomer.customer[0].chatRoom[0].id,
@@ -190,14 +193,13 @@ export const onAiChatBotAssistant = async (
               };
             }
           }
-
           return {
             live: true,
             chatRoom: checkCustomer.customer[0].chatRoom[0].id,
           };
         }
 
-        await onStoreConversation(
+        await onStoreConversations(
           checkCustomer?.customer[0].chatRoom[0].id!,
           message,
           author
@@ -207,7 +209,8 @@ export const onAiChatBotAssistant = async (
           messages: [
             {
               role: "assistant",
-              content: ` You will get an array of questions that you must ask the customer. 
+              content: `
+              You will get an array of questions that you must ask the customer. 
               
               Progress the conversation using those questions. 
               
@@ -234,6 +237,11 @@ export const onAiChatBotAssistant = async (
               }
           `,
             },
+            ...chat,
+            {
+              role: "user",
+              content: message,
+            },
           ],
           model: "gpt-3.5-turbo",
         });
@@ -257,7 +265,7 @@ export const onAiChatBotAssistant = async (
               ),
             };
 
-            await onStoreConversation(
+            await onStoreConversations(
               checkCustomer?.customer[0].chatRoom[0].id!,
               response.content,
               "assistant"
@@ -266,7 +274,6 @@ export const onAiChatBotAssistant = async (
             return { response };
           }
         }
-
         if (chat[chat.length - 1].content.includes("(complete)")) {
           const firstUnansweredQuestion =
             await client.customerResponses.findFirst({
@@ -281,7 +288,6 @@ export const onAiChatBotAssistant = async (
                 question: "asc",
               },
             });
-
           if (firstUnansweredQuestion) {
             await client.customerResponses.update({
               where: {
@@ -303,19 +309,17 @@ export const onAiChatBotAssistant = async (
             const link = generatedLink[0];
             const response = {
               role: "assistant",
-              content: "Great! you can follow the link to proceed",
+              content: `Great! you can follow the link to proceed`,
               link: link.slice(0, -1),
             };
 
-            await onStoreConversation(
+            await onStoreConversations(
               checkCustomer?.customer[0].chatRoom[0].id!,
               `${response.content} ${response.link}`,
               "assistant"
             );
 
-            return {
-              response,
-            };
+            return { response };
           }
 
           const response = {
@@ -323,7 +327,7 @@ export const onAiChatBotAssistant = async (
             content: chatCompletion.choices[0].message.content,
           };
 
-          await onStoreConversation(
+          await onStoreConversations(
             checkCustomer?.customer[0].chatRoom[0].id!,
             `${response.content}`,
             "assistant"
@@ -332,7 +336,7 @@ export const onAiChatBotAssistant = async (
           return { response };
         }
       }
-
+      console.log("No customer");
       const chatCompletion = await openai.chat.completions.create({
         messages: [
           {

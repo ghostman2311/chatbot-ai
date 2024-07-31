@@ -130,7 +130,7 @@
 
 # 16 July
 
-1. create conversation page.
+1. ~~create conversation page.~~
 2. ~~create conversation menu component~~
 3. ~~create use-conversation hook inside the conversation.~~
 4. ~~create conversationsearchschema.~~
@@ -150,7 +150,7 @@
 18. ~~create chatbot component with bubble.tsx.~~
 19. ~~create uuidfromtring util fn.~~
 20. ~~create chatbot page(app/chatbot dont put it inside the dashboard route group).~~
-21. create aichatbot component.
+21. ~~create aichatbot component.~~
 22. ~~create useChatbot hook.~~
 23. ~~create postToParent function in libs~~
 24. ~~create onGetCurrentChatbot.~~
@@ -168,20 +168,20 @@
 # 20 July
 
 1. ~~create mailer server action.~~
-2. setup gmail app password.
+2. ~~setup gmail app password.~~
 3. ~~bun add openai~~
 4. ~~create extractUrlfromstring function in utils~~
 5. ~~complete the usechatbot hook.~~
 6. create botwindow component.
-7. create realtimemode component.
-8. create useRealtime hook.
-9. continue working on chatbot component.
-10. create responding component.
+7. ~~create realtimemode component.~~
+8. ~~create useRealtime hook.~~
+9. ~~continue working on chatbot component.~~
+10. ~~create responding component.~~
 11. continue from 6:35
 
 # 22 July
 
-1. Test the chatbot now.
+1. ~~Test the chatbot now.~~
 2. create portal layout.
 3. create portalbanner component.
 4. create dynamic appointment page `app/portal/[domainid]/appointment/[customerid]`
@@ -286,4 +286,3 @@
 16. create useEditEmail hook.
 17. create onGetEmailTemplate server action.
 18. Finally Project has been completed.
-

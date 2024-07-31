@@ -1,16 +1,35 @@
 "use client";
 
 import useSidebar from "@/hooks/sidebar/use-sidebar";
+import { Loader } from "../loader";
+import { Switch } from "../ui/switch";
 
 type Props = {};
 
 const BreadCrumb = (props: Props) => {
-  const { expand, loading, onActivateRealtime, onExpand, page, onSignOut } =
-    useSidebar();
+  const {
+    expand,
+    loading,
+    onActivateRealtime,
+    onExpand,
+    page,
+    onSignOut,
+    chatRoom,
+    realtime,
+  } = useSidebar();
   return (
     <div className="flex flex-col">
       <div className="flex gap-5 items-center">
         <h2 className="text-3xl font-bold capitalize">{page}</h2>
+        {page === "conversation" && chatRoom && (
+          <Loader loading={loading}>
+            <Switch
+              defaultChecked={realtime}
+              onClick={(e) => onActivateRealtime(e)}
+              className="data-[state=checked]:bg-orange data-[state=unchecked]:bg-peach:"
+            ></Switch>
+          </Loader>
+        )}
       </div>
       <p className="text-gray-500 text-sm">
         {page === "settings"
