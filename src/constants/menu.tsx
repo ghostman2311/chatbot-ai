@@ -90,3 +90,10 @@ export const BOT_TABS_MENU: TABS_MENU_PROPS[] = [
     icon: <HelpDeskIcon />,
   },
 ];
+
+export const APPOINTMENT_TABLE_HEADER = [
+  "Name",
+  "Requested Time",
+  "Added Time",
+  "Domain",
+];

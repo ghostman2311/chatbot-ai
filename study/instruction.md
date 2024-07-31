@@ -172,7 +172,7 @@
 3. ~~bun add openai~~
 4. ~~create extractUrlfromstring function in utils~~
 5. ~~complete the usechatbot hook.~~
-6. create botwindow component.
+6. ~~create botwindow component.~~
 7. ~~create realtimemode component.~~
 8. ~~create useRealtime hook.~~
 9. ~~continue working on chatbot component.~~
@@ -182,29 +182,29 @@
 # 22 July
 
 1. ~~Test the chatbot now.~~
-2. create portal layout.
-3. create portalbanner component.
-4. create dynamic appointment page `app/portal/[domainid]/appointment/[customerid]`
-5. create customer signup page on above page.
-6. create onDomainCustomerResponses server action.
-7. create onGetAllDomainBooking action.
+2. ~~create portal layout.~~
+3. ~~create portalbanner component.~~
+4. ~~create dynamic appointment page `app/portal/[domainid]/appointment/[customerid]`~~
+5. ~~create customer signup page on above page.~~
+6. ~~create onDomainCustomerResponses server action.~~
+7. ~~create onGetAllDomainBooking action.~~
 8. create portal form component.
-9. create usePortal hook
-10. create onBookNewAppointment server action.
-11. create portalsteps components.
-12. create questionform component.
+9. ~~create usePortal hook~~
+10. ~~create onBookNewAppointment server action.~~
+11. ~~create portalsteps components.~~
+12. ~~create questionform component.~~
 13. continue from 7:05
 
 # 27 July
 
-1. create bookingappointment date component.
-2. create APPOINTMENT_TIME_SLOTS in constants.
-3. create save answers server action.
-4. create appointment page.
-5. create onGetAllBookingsForCurrentUser server action.
-6. create allappointments component.
-7. create appointment table header in constants.
-8. create data table components.
+1. ~~create bookingappointment date component.~~
+2. ~~create APPOINTMENT_TIME_SLOTS in constants.~~
+3. ~~create save answers server action.~~
+4. ~~create appointment page.~~
+5. ~~create onGetAllBookingsForCurrentUser server action.~~
+6. ~~create allappointments component.~~
+7. ~~create appointment table header in constants.~~
+8. ~~create data table components.~~
 9. create integration route.
 10. create onGetPaymentConnected server action.
 11. create IntegrationList component.
