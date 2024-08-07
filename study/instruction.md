@@ -205,15 +205,15 @@
 6. ~~create allappointments component.~~
 7. ~~create appointment table header in constants.~~
 8. ~~create data table components.~~
-9. create integration route.
-10. create onGetPaymentConnected server action.
-11. create IntegrationList component.
-12. create INTEGRATION_LIST_ITEMS in constants.
-13. create IntegrationTrigger component.
-14. create modal component.
-15. create IntegrationModalBody component.
-16. create stripe-connect.tsx
-17. create useStripe hook.
+9. ~~create integration route.~~
+10. ~~create onGetPaymentConnected server action.~~
+11. ~~create IntegrationList component.~~
+12. ~~create INTEGRATION_LIST_ITEMS in constants.~~
+13. ~~create IntegrationTrigger component.~~
+14. ~~create modal component.~~
+15. ~~create IntegrationModalBody component.~~
+16. ~~create stripe-connect.tsx~~
+17. ~~create useStripe hook.~~
 18. continue @ 7:42
 
 # 28 July
